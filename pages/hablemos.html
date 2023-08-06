@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logosca.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+    
+    <title>Hablemos - Scarlette Catalán - Arquitectura y Diseño</title>
+</head>
+<body>
+        <header> 
+            <nav>
+                <img id="logo" src="../images/logosca.png" alt="Scarlette Catalán - Arquitectura y Diseño">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/sobremi.html">Sobre mi</a></li>
+                    <li><a href="../pages/trabajos.html">Trabajos</a></li>
+                    <li><a class="active" href="#">Hablemos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+        <h2>Hablemos</h2>
+
+        <section id="formulario">
+            <form action="enviar.php" method="post">
+
+                <label for="nombreyapellido">Nombre y Apellido</label>
+                <input type="text" name="nombre_apellido" required="obligatorio">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" required="obligatorio">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" required="obligatorio" placeholder="Escribe un mensaje..."></textarea> 
+
+                <input type="submit" value="Enviar" class="btn-primary">
+            </form>
+        </section>
+
+        <section id="mapa">
+            <!--Aqui va el iframe del mapa-->
+        </section>
+
+        <section>
+            <h3>Que dicen de mi mis clientes</h3>
+
+            <article class="cliente-desc">
+                <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry the printing and typesetting industry ”</p>
+
+                <div class="datos-cliente">
+                    <img src="" alt="">
+                    <h4>Nombre cliente</h4>
+                    <span>Nombre empresa</span>
+                </div>
+            </article>
+
+            <article class="cliente-desc">
+                <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry the printing and typesetting industry ”</p>
+
+                <div class="datos-cliente">
+                    <img src="" alt="">
+                    <h4>Nombre cliente</h4>
+                    <span>Nombre empresa</span>
+                </div>
+            </article>
+
+            <article class="cliente-desc">
+                <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry the printing and typesetting industry ”</p>
+
+                <div class="datos-cliente">
+                    <img src="" alt="">
+                    <h4>Nombre cliente</h4>
+                    <span>Nombre empresa</span>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p class="derechos">©Todos los derechos reservados por ScarletteCatalanArquitectos.cl</p>
+    </footer>
+</body>
+</html>
