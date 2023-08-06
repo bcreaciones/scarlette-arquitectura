@@ -156,23 +156,27 @@ input.btn-primary:hover{
 }
 
 #imgPerfil{
-    max-width: 568px;
+    max-width: 548px;
+    width: 100%;
 }
 
 section.content-inicio {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 48px;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 article#present{
-    padding-right: 8%;
+    max-width: 522px;
+    margin: 24px;
 }
 
 article#present p{
     margin-top: 5%;
+    padding-right: 48px;
+    width: 100%;
 }
 
 #redes ul{
