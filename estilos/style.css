@@ -206,7 +206,6 @@ article#present p{
     margin-right: 2%;
 }
 
-
 #redes ul li a{
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -214,11 +213,11 @@ article#present p{
     transition:all 0.5s ease-out;
 
 }
+
 #redes ul li a:hover{
     opacity: 0.5;
 
 }
-
 
 .sobremi{
     display: flex;
@@ -261,8 +260,6 @@ article#present p{
     align-items: center;
     flex-wrap: wrap;
 }
-
-
 
 section.trabajos {
     display: flex;
@@ -381,8 +378,6 @@ iframe {
     justify-content: flex-start;
     flex-direction: column;
 }
-
-
 
 footer{
     position: absolute;
