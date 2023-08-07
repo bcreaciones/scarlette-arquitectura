@@ -9,6 +9,7 @@ html {
     box-sizing: border-box;
     height: 100%;
 }
+
 body {
     position: relative;
     margin: 0;
@@ -26,16 +27,17 @@ h1{
     font-weight: 700;
     line-height: normal;
     letter-spacing: -4.8px;
+    width: 100%;
 }
 
 h2{
     color: #494949;
     font-weight: 700;
     line-height: 32px;
-    font-family: Epilogue;
     font-size: 32px;
-    text-align: center;
     margin: 40px 0;
+    width: 100%;
+    text-align: center;
 }
 
 h3{
@@ -47,8 +49,16 @@ h3{
     margin: 40px 0;
 }
 
+h4{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
 h2#titlemini{
     text-align: left;
+    font-weight: 400;
 }
 
 p{
@@ -69,9 +79,11 @@ a{
     -o-transition:all 0.5s ease-out;
     transition:all 0.5s ease-out;
 }
+
 a.hover{
     text-decoration: underline;
 }
+
 a.btn-primary:hover{
     background: #D3E5E2;
     color: #009379;
@@ -115,6 +127,7 @@ nav ul{
     width: 100%;
     gap: 24px;
     justify-content: flex-end;
+    margin: 0;
 }
 
 nav ul li{
@@ -153,6 +166,7 @@ main{
     text-align: center;
     display: block;
 }
+
 input.btn-primary{
     font-family: 'Epilogue', sans-serif;
     font-weight: 700;
@@ -160,9 +174,9 @@ input.btn-primary{
     font-size: 16px;
     cursor: pointer;
     min-width: 150px;
-    align-items: flex-start;
-    
+    align-items: flex-start;  
 }
+
 input.btn-primary:hover{
     background: #D3E5E2;
     color: #009379;
@@ -183,12 +197,12 @@ section.content-inicio {
 
 article#present{
     max-width: 522px;
-    margin: 24px;
+    padding: 24px;
+    width: 100%;
 }
 
 article#present p{
     margin-top: 5%;
-    padding-right: 48px;
     width: 100%;
 }
 
@@ -211,12 +225,10 @@ article#present p{
     -moz-transition: all 0.5s ease-out;
     -o-transition:all 0.5s ease-out;
     transition:all 0.5s ease-out;
-
 }
 
 #redes ul li a:hover{
     opacity: 0.5;
-
 }
 
 .sobremi{
@@ -302,7 +314,6 @@ section.trabajos {
 }
 
 #mapa{
-    /* min-width: 316px; */
     border-radius: 32px 0px;
     height: 452px;
     overflow: hidden;
@@ -379,6 +390,10 @@ iframe {
     flex-direction: column;
 }
 
+.img-trabajo img{
+    width: 100%;
+}
+
 footer{
     position: absolute;
     bottom: 0;
@@ -388,3 +403,18 @@ footer{
     text-align: center;
 }
 
+@media (max-width: 575.98px){
+    h1 {
+        font-size: 56px;
+    }
+    h2#titlemini {
+        font-size: 20px;
+        margin: 24px 0;
+    }
+    section.content-inicio{
+        margin-top: 8px;
+    }
+    #imgPerfil {
+        margin-bottom: 48px;
+    }
+ }
