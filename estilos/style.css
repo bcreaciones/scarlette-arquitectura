@@ -37,6 +37,16 @@ h2{
     text-align: center;
     margin: 40px 0;
 }
+
+h3{
+    color: #494949;
+    font-weight: 700;
+    line-height: 32px;
+    font-size: 22px;
+    text-align: center;
+    margin: 40px 0;
+}
+
 h2#titlemini{
     text-align: left;
 }
@@ -149,6 +159,9 @@ input.btn-primary{
     border: none;
     font-size: 16px;
     cursor: pointer;
+    min-width: 150px;
+    align-items: flex-start;
+    
 }
 input.btn-primary:hover{
     background: #D3E5E2;
@@ -291,13 +304,9 @@ section.trabajos {
     width: 100%;
 }
 
-
-
 #mapa{
-    min-width: 316px;
+    /* min-width: 316px; */
     border-radius: 32px 0px;
-    border: 1px solid #D9D9D9;
-    padding: 0;
     height: 452px;
     overflow: hidden;
 }
@@ -306,10 +315,15 @@ section.trabajos {
     display: flex;
 }
 
-#formulario{
-    /* min-width: 316px; */
-    /* width: 100%; */
-    /* max-width: 475px; */
+.flex-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 32px 0px;
+    border: 1px solid #D9D9D9;
 }
 
 #formulario label{
@@ -321,18 +335,54 @@ section.trabajos {
 #formulario input.form-generico, #formulario textarea.form-generico{
     display: flex;
     width: 100%;
-    max-width: 475px;
     height: 64px;
+    max-width: 475px;
     padding: 24px;
     align-items: center;
     border-radius: 8px;
     border: 1px solid #494949;
     background: #FFF;
     margin: 0 0 32px 0;
+    caret-color: #009379;
 }
 #formulario textarea.form-generico{
     min-height: 164px;
 }
+
+.cliente-desc{
+    border-radius: 32px 0px;
+    background: #FFF;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    border: none;
+}
+
+.cliente-desc p, .cliente-desc h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.datos-cliente{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.datos-cliente img{
+    width: 56px;
+    height: 56px;
+}
+.content-cliente{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
 
 footer{
     position: absolute;
