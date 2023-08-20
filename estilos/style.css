@@ -393,6 +393,9 @@ iframe {
 .img-trabajo img{
     width: 100%;
 }
+.iconmobile{
+    display: none;
+}
 
 footer{
     position: absolute;
@@ -402,6 +405,7 @@ footer{
     background-color: #2D2D2D;
     text-align: center;
 }
+
 
 @media (max-width: 575.98px){
     h1 {
@@ -417,4 +421,31 @@ footer{
     #imgPerfil {
         margin-bottom: 48px;
     }
- }
+    nav{
+        flex-wrap: wrap;
+    }
+    nav ul {
+        gap: 0;
+        justify-content: space-between;
+        margin: 24px 0 0;
+        align-items: center;
+        padding: 0;
+        line-height: 16px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+    }
+
+    nav ul li a.ini{
+        font-size: 0;
+        padding: 8px;
+        line-height: 0;
+    }
+
+    .iconmobile{
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+}
