@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;1,600&display=swap');
+@import "colores";
+@import "tamanos-tipos";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 6rem;
+    box-sizing: inherit;
+    background: $color-background;
+    font-family: $font-family-principal;
+    color: $color-neutral;
+    
+}
+
+h1{
+    font-size: $font-size-h1;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4.8px;
+    width: 100%;
+}
+
+h2{
+    color: $color-titulos;
+    font-weight: 700;
+    line-height: 32px;
+    font-size: $font-size-h2;
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+}
+
+h3{
+    color: $color-titulos;
+    font-weight: 700;
+    line-height: 32px;
+    font-size: $font-size-h3;
+    text-align: center;
+    margin: 40px 0;
+}
+
+h4{
+    font-size: $font-size-h4;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+h2#titlemini{
+    text-align: left;
+    font-weight: 400;
+}
+
+p{
+    color: $color-titulos;
+    font-size: $font-size-normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+a{
+    color: $color-primario;
+    font-weight: 700;
+    outline: none;
+    text-decoration: none;
+    font-size: $font-size-normal;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+
+    &:hover{
+        background: $color-secundario-background;
+        color:$color-primario;
+    }
+}
+
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+p.derechos{
+    color: $color-white;
+    text-align: center;
+    font-size: $font-size-xs;
+    font-weight: 400;
+    line-height: 27px;
+    display: block;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+header{
+    width: 100%;
+    max-width: 1138px;
+    margin: 0 auto;
+
+    img{
+        height: 83px;
+        display: block;
+    }
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    padding: 16px;
+    ul{
+            display: flex;
+            width: 100%;
+            gap: 24px;
+            justify-content: flex-end;
+            margin: 0;
+        li{
+            justify-content: flex-start;
+        }
+        a{
+            padding: 16px;
+            border-radius: 50px;
+            display: block;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition:all 0.5s ease-out;
+            transition:all 0.5s ease-out;
+        }
+        a.active{
+            background: $color-secundario-background;
+        }
+        a:hover{
+            background: $color-secundario-background;
+        }
+    }
+}
+
+main{
+    max-width: 1138px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background: $color-primario;
+    color: $color-white;
+    padding: 16px 24px;
+    border-radius: 50px;
+    max-width: 110px;
+    text-align: center;
+    display: block;
+}
+
+input.btn-primary{
+    font-weight: 700;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 150px;
+    align-items: flex-start;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+
+    &:hover{
+        background: $color-secundario-background;
+        color: $color-primario;
+    } 
+            
+}
+
+
+#imgPerfil{
+    max-width: 548px;
+    width: 100%;
+}
+
+section.content-inicio {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+article#present{
+    max-width: 522px;
+    padding: 24px;
+    width: 100%;
+    p{
+        margin-top: 5%;
+        width: 100%;
+    }
+}
+
+#redes{
+    margin-top: 32px;
+    ul{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    li{
+        margin-right: 2%;
+    }
+    a{
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition:all 0.5s ease-out;
+        transition:all 0.5s ease-out;
+    }
+    a:hover{
+        opacity: 0.5;
+    }
+}
+
+
+.sobremi{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: space-evenly;
+
+    article{
+        max-width: 267px;
+        padding: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+    img{
+        max-width: 125px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.marcas{
+    background: $color-white;
+    max-height: 136px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin: 40px;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+section.trabajos {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.proyecto-card{
+    border-radius: 32px 0px;
+    background: $color-white;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    max-width: 310px;
+    flex-direction: column;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+
+    img{
+        border-radius: 32px 32px 0px 0px;
+        display: block;
+        width: 100%;
+    }
+    &:hover{
+        -webkit-box-shadow: 0px 0px 25px -8px rgba(45,45,45,0.4);
+        -moz-box-shadow: 0px 0px 25px -8px rgba(45,45,45,0.4);
+        box-shadow: 0px 0px 25px -8px rgba(45,45,45,0.4);
+    }
+}
+
+.content-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#mapa{
+    border-radius: 32px 0px;
+    height: 452px;
+    overflow: hidden;
+}
+
+.container-form{
+    display: flex;
+}
+
+.flex-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 32px 0px;
+    border: 1px solid $color-border;
+}
+
+#formulario label{
+    color: $color-neutral;
+    font-size: $font-size-normal;
+    font-style: normal;
+    font-weight: 700;
+}
+#formulario input.form-generico, #formulario textarea.form-generico{
+    display: flex;
+    width: 100%;
+    height: 64px;
+    max-width: 475px;
+    padding: 24px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid $color-border;
+    background: $color-white;
+    margin: 0 0 32px 0;
+    caret-color: $color-primario;
+}
+#formulario textarea.form-generico{
+    min-height: 164px;
+}
+
+.cliente-desc{
+    border-radius: 32px 0px;
+    background: $color-white;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    border: none;
+
+    p, h4{
+        font-size: $font-size-md;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+    }
+}
+
+.datos-cliente{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img{
+        width: 56px;
+        height: 56px;
+    }
+}
+
+.content-cliente{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.img-trabajo img{
+    width: 100%;
+}
+.iconmobile{
+    display: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-neutral;
+    text-align: center;
+}
+
+
+@media (max-width: 575.98px){
+    h1 {
+        font-size: $font-size-xl;
+    }
+    h2#titlemini {
+        font-size: $font-size-h4;
+        margin: 24px 0;
+    }
+    section.content-inicio{
+        margin-top: 8px;
+    }
+    #imgPerfil {
+        margin-bottom: 48px;
+    }
+    nav{
+        flex-wrap: wrap;
+        ul {
+            gap: 0;
+            justify-content: space-between;
+            margin: 24px 0 0;
+            align-items: center;
+            padding: 0;
+            line-height: 16px;
+        }
+        a{
+            font-size: $font-size-s;
+        }
+    }
+    
+    nav ul li a.ini{
+        font-size: 0;
+        padding: 8px;
+        line-height: 0;
+    }
+
+    .iconmobile{
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+}
